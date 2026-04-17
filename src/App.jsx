@@ -54,7 +54,7 @@ export const App = () => {
                     >
                       -
                     </button>
-                  ) : (
+                  ) : !selectedGood ? (
                     <button
                       data-cy="AddButton"
                       type="button"
@@ -63,7 +63,7 @@ export const App = () => {
                     >
                       +
                     </button>
-                  )}
+                  ) : null}
                 </td>
 
                 <td data-cy="GoodTitle" className="is-vcentered">
